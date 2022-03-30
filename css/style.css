@@ -1,0 +1,246 @@
+/* ------------------------------- fonts start ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+/* ------------------------------- fonts end ------------------------------ */
+/* --------------------------- common styles start -------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* --------------------------- common styles end -------------------------- */
+/* ------------------------------ header section start ------------------------------ */
+/* nav start */
+.custom_navbar_toggler_button:focus {
+    box-shadow: none;
+}
+.search_box {
+    width: 50%;
+    background: #F1F1F1;
+    border-radius: 20px;
+    padding: 0 15px;
+    border: 2px solid transparent;
+    transition: border .5s ease;
+}
+.search_box:hover {
+    border: 2px solid #4289FF;
+}
+.search_box input {
+    padding: 10px;
+    outline: none;
+}
+.search_box input:focus {
+    box-shadow: none;
+}
+.search_box i {
+    color: #BABABA;
+    cursor: pointer;
+    transition: transform .7s ease;
+}.search_box i:hover {
+    transform: scale(1.5);
+}
+/* nav end  */
+/* carousel banner start */
+.banner_section {
+    background-color: #FEEAE9;
+    margin: 63px 0 64px;
+}
+
+.custom_indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #FF589B;
+    transition: transform .7s ease;
+}
+
+.custom_indicators [data-bs-target]:hover {
+    transform: scale(1.3);
+}
+
+.banner_text h1 {
+    font-size: 56px;
+    font-weight: 700;
+}
+.banner_text p {
+    font-size: 16px;
+    line-height: 26px;
+    width: 456px;
+}
+.banner_text h2 {
+    font-size: 41px;
+    font-weight: 500;
+    color: #FF136F;
+}
+.banner_text button {
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+    color: #fff;
+    font-weight: 500;
+    font-style: 16px;
+}
+.banner_text button:hover {
+    color: #fff;
+}
+.banner_img img {
+    width: 402px;
+}
+.btn_nxtprv {
+    color: red;
+}
+/* carousel banner end */
+/* --------------------------- header section end --------------------------- */
+/* --------------------------- main section start --------------------------- */
+/* categories start */
+.main_section_title {
+    font-size: 36px;
+    font-weight: 600;
+}
+.watch {
+    background: linear-gradient(152.07deg, #FF9C35 1.47%, #FFD019 97.17%);
+    border-radius: 7px;
+}
+.bag {
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+    border-radius: 7px;
+}
+.shoe {
+    background: linear-gradient(170.41deg, #4289FF -10.89%, #3F07F8 92.77%);
+    border-radius: 7px;
+}
+.watch h2, .bag h2, .shoe h2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: whitesmoke;
+    border-bottom: 3px solid transparent;
+    transition: border-bottom .7s ease;
+}
+.watch:hover h2, .bag:hover h2, .shoe:hover h2 {
+    border-bottom: 3px solid #ffffff;
+}
+.watch img, .bag img, .shoe img {
+    width: 94px;
+    height: 94px;
+    transition: transform .7s ease;
+}
+.watch:hover img, .bag:hover img, .shoe:hover img {
+    transform: scale(1.5) rotate(360deg);
+}
+/* categories end */
+/* shoes start  */
+.shoes_section {
+    background-color: #F4F4F4;
+    overflow: hidden;
+}
+.shoe_info {
+    transition: transform .7s ease;
+    border-radius: 10px !important;
+}
+.shoe_info:hover {
+    transform: scale(.95);
+}
+.shoe_info img {
+    overflow: hidden;
+    transition: transform .7s ease-in-out;
+}
+.shoe_info:hover img {
+    transform: scale(1.1) rotate(7deg);
+}
+.shoe_title h5 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.shoe_price {
+    font-size: 24px;
+    font-weight: 700;
+    color: #FF136F;
+}
+.custom_button {
+    background: linear-gradient(180deg, #FF589B -0.01%, #FF136F 99.99%);
+    cursor: pointer;
+}
+.custom_button button {
+    outline: none;
+    background: transparent;
+}
+/* shoes end  */
+/* contact section start */
+.contact_section {
+    background-color:#FFF2F1;
+    padding: 100px 0;
+}
+.contat_title h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.contact_email input {
+    padding: 15px 25px;
+    background: #fff;
+    border: none;
+    outline: none;
+    width: 683px;
+}
+.contact_email button {
+    padding: 15px 40px;
+    background: linear-gradient(180deg, #FF589B 0%, #FF136F 100%);
+    border: none;
+    margin-left: -4px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+.contact_email button:hover {
+    color: whitesmoke;
+}
+/* contact section end */
+/* --------------------------- main section end --------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------- responsive start ---------------------------- */
+@media only screen and (max-width: 576px) {
+
+    .banner_text h1 {
+        font-size: 36px;
+    }
+    .banner_text p {
+        width: 100%;
+    }
+    .banner_img img {
+        width: 95%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .search_box {
+        width: 100%;
+        margin: 20px 0 15px;
+    }
+    .custom_navbar {
+        text-align: center;
+    }
+    .contact_email input {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 374px) {
+    .contact_email input {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+  /* ----------------------------- responsive end ----------------------------- */
